@@ -45,7 +45,8 @@ function ContextElement({ children, styles, contextId, insertOnIndex = true }) {
     if (
       (insertPropIsArray && !insertOnIndex.includes(index)) ||
       (insertPropIsNumber && insertOnIndex !== index) ||
-      (insertPropIsBool && !insertOnIndex)
+      (insertPropIsBool && !insertOnIndex) ||
+      !child.props
     ) {
       return child;
     }
