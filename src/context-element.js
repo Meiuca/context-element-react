@@ -30,7 +30,7 @@ function ContextElement({ children, styles, contextId, insertOnIndex = true }) {
   this.updateStyles = () => {
     const { _styleGetterArray } = this;
 
-    const styleIdList = _styleGetterArray.map(getter => getter.extract(contextId));
+    const styleIdList = _styleGetterArray.map(getter => getter.extract(this.contextId));
 
     setState({ styleIdList });
   };
