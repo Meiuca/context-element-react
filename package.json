@@ -1,0 +1,80 @@
+{
+  "name": "@meiuca/context-element",
+  "description": "A LitElement overlay to support contexts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src",
+  "module": "src",
+  "types": "src",
+  "author": "Levi Pires <waltvy.comercial@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "format": "prettier --write \"(src|test)/**/*.(js|d.ts)\"",
+    "lint": "prettier --check \"(src|test)/**/*.(js|d.ts)\"",
+    "test": "echo \"test not implemented\"",
+    "eslint": "eslint --ext .js,.mjs . --ignore-path .gitignore",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@meiuca/context-element": "Meiuca/context-element",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.13.10",
+    "@babel/eslint-plugin": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-react": "^7.13.13",
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@open-wc/testing": "^2.5.32",
+    "@snowpack/plugin-babel": "^2.1.5",
+    "@snowpack/plugin-dotenv": "^2.0.5",
+    "@web/test-runner": "^0.12.17",
+    "@web/test-runner-playwright": "^0.8.4",
+    "babel-loader": "8.1.0",
+    "cors": "^2.8.5",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.23.2",
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "husky": "^6.0.0",
+    "husky-controller": "^1.0.12",
+    "prettier": "^2.0.5",
+    "rollup": "^2.44.0",
+    "sinon": "^10.0.0",
+    "snowpack": "^3.1.2"
+  },
+  "peerDependencies": {},
+  "huskyController": {
+    "commands": [
+      "yarn lint",
+      "yarn eslint",
+      "yarn test"
+    ],
+    "mainFolders": "^(test|src)"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

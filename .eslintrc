@@ -1,0 +1,26 @@
+{
+  "extends": ["plugin:react/recommended", "eslint-config-airbnb-base", "eslint-config-prettier"],
+  "plugins": ["react"],
+  "parser": "@babel/eslint-parser",
+  "env": { "browser": true },
+  "rules": {
+    "no-underscore-dangle": "off",
+    "import/extensions": ["error", "always", { "ignorePackages": true }]
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off",
+        "import/no-unresolved": "warn"
+      }
+    },
+    {
+      "files": ["server.js", "*.config.js"],
+      "rules": {
+        "no-console": "off",
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
+}
