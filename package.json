@@ -1,5 +1,5 @@
 {
-  "name": "@meiuca/context-element",
+  "name": "@meiuca/context-element-react",
   "description": "A LitElement overlay to support contexts",
   "version": "1.0.0",
   "license": "MIT",
