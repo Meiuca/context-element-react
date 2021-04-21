@@ -1,4 +1,4 @@
-import ContextElement from './context-element';
+import { ContextElement } from './context-element';
 
 export * from '@meiuca/context-element/src/global-props';
 export * from '@meiuca/context-element/src/css';

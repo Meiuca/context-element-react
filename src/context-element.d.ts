@@ -7,6 +7,16 @@ declare interface ContextElementProps {
   insertOnIndex?: Array<number> | number | boolean;
 }
 
+export interface ContextElement {
+  contextId: string;
+  updateStyles: () => void;
+
+  private _styleGetterArray: Array<StyleGetter>;
+  private _initialState: {
+    styleIdList: string[];
+  };
+}
+
 declare const ContextElementWrapper: FunctionComponent<ContextElementProps>;
 
 export default ContextElementWrapper;
