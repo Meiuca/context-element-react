@@ -2,3 +2,4 @@ node_modules
 umd
 build
 yarn-error.log
+yarn.lock
