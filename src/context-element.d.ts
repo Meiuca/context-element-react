@@ -2,8 +2,17 @@ import { FunctionComponent } from 'react';
 import { StyleGetter } from '@meiuca/context-element/src/css';
 
 declare interface ContextElementProps {
-  styles: StyleGetter | Array<StyleGetter>;
+  /**
+   * Array of style getters to apply to the element. The getters should be defined
+   * using the `createGooberGetter` or `createLitGetter` tag function.
+   */
+  styles?: StyleGetter | Array<StyleGetter>;
   contextId: string;
+  /**
+   * - If `boolean`, controls whether `styleId` will be inserted in all direct children or not
+   * - If `number`, insert the `styleId` into the direct child whose index is equal to `number`
+   * - If `number[]`, follows the same rule as `number` but with support for multiple indexes
+   */
   insertOnIndex?: Array<number> | number | boolean;
 }
 
