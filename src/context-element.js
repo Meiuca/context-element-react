@@ -3,7 +3,12 @@ import { isArray } from 'lodash';
 import PropTypes from 'prop-types';
 import styleGetter from './style-getter-prop-validation.js';
 
-function ContextElement({ children, styles, contextId, insertOnIndex = true }) {
+function ContextElement({ children, styles = [], contextId, insertOnIndex = true }) {
+  if (!window.DSRegistry) {
+    // Interrupt instance creation, since `DSRegistry` has not been declared
+    throw new Error('DSRegistry is not defined');
+  }
+
   this.contextId = contextId;
 
   /**
@@ -19,13 +24,13 @@ function ContextElement({ children, styles, contextId, insertOnIndex = true }) {
 
   useEffect(() => {
     // Register itself when instantiated
-    window.DSRegistry?.push(this);
+    window.DSRegistry.push(this);
 
     // Remove itself from registry when removed from the DOM
     return () => {
-      const selfRegistrationIndex = window.DSRegistry?.indexOf(this);
+      const selfRegistrationIndex = window.DSRegistry.indexOf(this);
 
-      if (selfRegistrationIndex >= 0) window.DSRegistry?.splice(selfRegistrationIndex, 1);
+      if (selfRegistrationIndex >= 0) window.DSRegistry.splice(selfRegistrationIndex, 1);
     };
   }, [state]);
 
