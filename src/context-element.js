@@ -18,8 +18,10 @@ function ContextElement({ children, styles, contextId, insertOnIndex = true }) {
   const [state, setState] = useState(this._initialState);
 
   useEffect(() => {
+    // Register itself when instantiated
     window.DSRegistry?.push(this);
 
+    // Remove itself from registry when removed from the DOM
     return () => {
       const selfRegistrationIndex = window.DSRegistry?.indexOf(this);
 
@@ -41,11 +43,16 @@ function ContextElement({ children, styles, contextId, insertOnIndex = true }) {
   const insertPropIsBool = typeof insertOnIndex === 'boolean';
   const insertPropIsNumber = typeof insertOnIndex === 'number';
 
+  // map `children` to insert `styleIdList`
   return Children.map(children, (child, index) => {
     if (
+      // `insertOnIndex` is `number[]` and does not include `index`
       (insertPropIsArray && !insertOnIndex.includes(index)) ||
+      // `insertOnIndex` is `number` and its different from `index`
       (insertPropIsNumber && insertOnIndex !== index) ||
+      // `insertOnIndex` is `boolean` and its value is `false`
       (insertPropIsBool && !insertOnIndex) ||
+      // `child` is not a ReactElement
       !child.props
     ) {
       return child;
