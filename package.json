@@ -61,7 +61,7 @@
       "yarn eslint",
       "yarn test"
     ],
-    "mainFolders": "^(test|src)"
+    "mainFolders": "^(test|src).+\\.js"
   },
   "browserslist": {
     "production": [
