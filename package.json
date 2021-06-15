@@ -1,7 +1,7 @@
 {
   "name": "@meiuca/context-element-react",
   "description": "A LitElement overlay to support contexts",
-  "version": "1.0.2",
+  "version": "1.0.21",
   "license": "MIT",
   "main": "src",
   "module": "src",
@@ -20,11 +20,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@meiuca/context-element": "Meiuca/context-element",
-    "lodash": "^4.17.21",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@meiuca/context-element": "https://github.com/Meiuca/context-element#feature/impl/lit",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -54,7 +51,11 @@
     "sinon": "^10.0.0",
     "snowpack": "^3.1.2"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "prop-types": ">=15",
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
   "huskyController": {
     "commands": [
       "yarn lint",
