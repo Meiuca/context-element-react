@@ -1,7 +1,7 @@
 {
   "name": "@meiuca/context-element-react",
   "description": "A LitElement overlay to support contexts",
-  "version": "1.0.21",
+  "version": "1.0.3",
   "license": "MIT",
   "main": "src",
   "module": "src",
@@ -10,6 +10,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "src/",
+    "directives/"
+  ],
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -20,7 +24,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@meiuca/context-element": "https://github.com/Meiuca/context-element#feature/impl/lit",
+    "@meiuca/context-element": "^1.6.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
