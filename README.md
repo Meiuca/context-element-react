@@ -4,13 +4,13 @@ Context Element React extends [Context Element](https://github.com/Meiuca/contex
 
 ## Installation
 
-This package is only available on Github.
+This package is only available on Github NPM registry.
 
-`yarn add Meiuca/context-element-react`
+`yarn add @meiuca/context-element-react`
 
 or
 
-`yarn add https://github.com/Meiuca/context-element-react.git`
+`npm -i @meiuca/context-element-react`
 
 ## Getting Started
 
@@ -52,9 +52,7 @@ export default function MyInput({ required, placeholder, type, label }) {
 import { createGooberGetter as css } from '@meiuca/context-element';
 import { inputContext } from './contexts.js';
 
-export default css`
-  /* default context: ${inputContext} */
-
+export default css(inputContext)`
   &.my-Input-label {
     display: flex;
     flex-direction: column;
