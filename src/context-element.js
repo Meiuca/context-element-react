@@ -32,7 +32,7 @@ function ContextElement({ children, styles = [], contextId, insertOnIndex = true
 
       if (selfRegistrationIndex >= 0) window.DSRegistry.splice(selfRegistrationIndex, 1);
     };
-  }, [state]);
+  }, []);
 
   this.updateStyles = () => {
     const { _styleGetterArray } = this;
