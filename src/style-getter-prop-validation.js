@@ -1,7 +1,7 @@
 /**
  * Used by propTypes
  *
- * @type {import('prop-types').Requireable<import('@meiuca_design/context-element').StyleGetter>}
+ * @type {import('prop-types').Requireable<import('@jotads/context-element').StyleGetter>}
  */
 const styleGetter = (props, propName, componentName) => {
   if (typeof props[propName] !== 'function' || !props[propName].extract) {
