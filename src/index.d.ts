@@ -1,8 +1,8 @@
 import { ContextElement } from './context-element';
 
-export * from '@meiuca/context-element/src/global-props';
-export * from '@meiuca/context-element/src/css';
-export * from '@meiuca/context-element/src/context';
+export * from '@meiuca_design/context-element/src/global-props';
+export * from '@meiuca_design/context-element/src/css';
+export * from '@meiuca_design/context-element/src/context';
 export { default as ContextElement } from './context-element.js';
 
 declare global {
@@ -12,7 +12,7 @@ declare global {
     /**
      * This is a global module declaration
      * that will only exist if you import
-     * `@meiuca/context-element-react/src/module-declaration.js`
+     * `@meiuca_design/context-element-react/src/module-declaration.js`
      */
     ContextElement?: typeof import('./index');
   }

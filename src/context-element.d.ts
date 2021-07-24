@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import { StyleGetter } from '@meiuca/context-element/src/css';
+import { StyleGetter } from '@meiuca_design/context-element/src/css';
 
 declare interface ContextElementProps {
   /**

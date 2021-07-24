@@ -12,7 +12,7 @@ function ContextElement({ children, styles = [], contextId, insertOnIndex = true
   this.contextId = contextId;
 
   /**
-   * @type {import('@meiuca/context-element/src/css').StyleGetter[]}
+   * @type {import('@meiuca_design/context-element/src/css').StyleGetter[]}
    */
   this._styleGetterArray = isArray(styles) ? styles : [styles];
 

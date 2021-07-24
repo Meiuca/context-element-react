@@ -1,5 +1,5 @@
 {
-  "name": "@meiuca/context-element-react",
+  "name": "@meiuca_design/context-element-react",
   "description": "A LitElement overlay to support contexts",
   "version": "1.0.0",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@meiuca/context-element": "^1.6.1",
+    "@meiuca_design/context-element": "2.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
