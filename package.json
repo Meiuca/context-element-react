@@ -1,12 +1,12 @@
 {
   "name": "@meiuca/context-element-react",
   "description": "A LitElement overlay to support contexts",
-  "version": "1.0.32",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "src",
   "module": "src",
   "types": "src",
-  "author": "Levi Pires <waltvy.comercial@gmail.com>",
+  "author": "Meiuca <meiuca@meiuca.design>",
   "publishConfig": {
     "access": "public"
   },
