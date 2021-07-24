@@ -1,5 +1,5 @@
 {
-  "name": "@jotads/context-element-react",
+  "name": "@jota-ds/context-element-react",
   "description": "A LitElement overlay to support contexts",
   "version": "1.0.0",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@jotads/context-element": "1.0.0",
+    "@jota-ds/context-element": "1.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

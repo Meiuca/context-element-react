@@ -6,11 +6,7 @@ Context Element React extends [Context Element](https://github.com/Meiuca/contex
 
 This package is only available on Github NPM registry.
 
-`yarn add @meiuca/context-element-react`
-
-or
-
-`npm -i @meiuca/context-element-react`
+`yarn add @jota-ds/context-element-react`
 
 ## Getting Started
 

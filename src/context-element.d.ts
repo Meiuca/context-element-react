@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import { StyleGetter } from '@jotads/context-element/src/css';
+import { StyleGetter } from '@jota-ds/context-element/src/css';
 
 declare interface ContextElementProps {
   /**

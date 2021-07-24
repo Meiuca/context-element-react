@@ -1,8 +1,8 @@
 import { ContextElement } from './context-element';
 
-export * from '@jotads/context-element/src/global-props';
-export * from '@jotads/context-element/src/css';
-export * from '@jotads/context-element/src/context';
+export * from '@jota-ds/context-element/src/global-props';
+export * from '@jota-ds/context-element/src/css';
+export * from '@jota-ds/context-element/src/context';
 export { default as ContextElement } from './context-element.js';
 
 declare global {
@@ -12,7 +12,7 @@ declare global {
     /**
      * This is a global module declaration
      * that will only exist if you import
-     * `@jotads/context-element-react/src/module-declaration.js`
+     * `@jota-ds/context-element-react/src/module-declaration.js`
      */
     ContextElement?: typeof import('./index');
   }
