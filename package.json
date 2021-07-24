@@ -24,7 +24,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@meiuca_design/context-element": "2.0.0",
+    "@jotads/context-element": "1.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
